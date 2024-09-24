@@ -16,39 +16,69 @@ header {
 main {
     width: 100%;
     height: calc(100vh - 80px);
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main #pokedex {
+#pokedexContainer {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as duas telas */
+}
+
+#pokedex, #sideScreen {
     background-color: rgb(255, 68, 68);
-    width: 500px;
+    width: 300px;
     height: 500px;
     border-radius: 15px;
     border: 1px solid rgb(153, 6, 6);
     box-shadow: 6px 5px 10px 0px rgba(153, 6, 6, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
-main #pokedex #visor {
+#visor {
     background-color: hwb(172 3% 3%);
     border: 7px solid #ccc;
-    width: 450px;
-    height: 350px;
-    margin: 15px auto;
+    width: 250px;
+    height: 250px;
+    margin: 15px 0;
     text-align: center;
 }
 
-main #pokedex .form-floating {
-    width: 450px;
-    margin: 15px auto 0 auto;
+#sideVisor {
+    background-color: #fffefe;
+    border: 7px solid #ccc;
+    width: 280px; /* Aumenta a largura do visor da segunda tela */
+    height: 500px; /* Aumenta a altura do visor da segunda tela */
+    margin: 15px 0;
+    text-align: center;
 }
 
-main #pokedex button {
-    margin-left: 25px;
-    width: 450px;
+#pokedex .form-floating {
+    width: 250px;
+    margin: 15px auto;
+}
+
+#pokedex button {
+    width: 250px;
     border-radius: 5px;
-    height: 70 px;
-    color:red;
-    font: bold;
+    height: 50px;
+    color: red;
+    font-weight: bold;
+}
+
+.progress-container {
+    width: 100%; /* Largura total */
+    background-color: #ccc; /* Cor de fundo da barra */
+    border-radius: 5px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que a barra não vaze do container */
+}
+
+.progress-bar {
+    height: 20px; /* Altura da barra */
+    background-color: #44ff6d; /* Cor da barra */
+    transition: width 0.3s ease; /* Efeito de transição suave */
 }

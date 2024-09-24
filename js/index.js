@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded",function(){
                  
                      const progressBar = document.createElement("div");
                      progressBar.classList.add("progress-bar");
-                     progressBar.style.width = `${statusAtual.base_stat}%`; // Define a largura com base no valor
+                     progressBar.style.width = `${statusAtual.base_stat}%`; 
                  
                      divBase_stat.innerHTML = `<h3>${statusAtual.stat.name}: ${statusAtual.base_stat}</h3>`;
                      progressContainer.appendChild(progressBar); // Adiciona a barra de progresso ao container

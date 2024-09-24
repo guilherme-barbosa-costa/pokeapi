@@ -28,8 +28,8 @@ main {
 
 #pokedex, #sideScreen {
     background-color: rgb(255, 68, 68);
-    width: 300px;
-    height: 500px;
+    width: 350px; /* Aumenta a largura da tela */
+    height: 600px; /* Aumenta a altura da tela */
     border-radius: 15px;
     border: 1px solid rgb(153, 6, 6);
     box-shadow: 6px 5px 10px 0px rgba(153, 6, 6, 0.575);
@@ -42,16 +42,16 @@ main {
 #visor {
     background-color: hwb(172 3% 3%);
     border: 7px solid #ccc;
-    width: 250px;
-    height: 250px;
+    width: 300px; /* Aumenta a largura do visor da primeira tela */
+    height: 300px; /* Aumenta a altura do visor da primeira tela */
     margin: 15px 0;
     text-align: center;
 }
 
 #sideVisor {
-    background-color: #fffefe;
+    background-color: hwb(172 3% 3%);
     border: 7px solid #ccc;
-    width: 280px; /* Aumenta a largura do visor da segunda tela */
+    width: 320px; /* Aumenta a largura do visor da segunda tela */
     height: 500px; /* Aumenta a altura do visor da segunda tela */
     margin: 15px 0;
     text-align: center;
@@ -71,14 +71,13 @@ main {
 }
 
 .progress-container {
-    width: 100%; /* Largura total */
-    background-color: #ccc; /* Cor de fundo da barra */
-    border-radius: 5px; /* Bordas arredondadas */
-    overflow: hidden; /* Garante que a barra não vaze do container */
+    width: 100%; 
+    background-color: #ccc; 
+    border-radius: 5px; 
+    overflow: hidden; 
 }
-
 .progress-bar {
     height: 20px; /* Altura da barra */
-    background-color: #44ff6d; /* Cor da barra */
+    background-color: #44ff6d; 
     transition: width 0.3s ease; /* Efeito de transição suave */
 }

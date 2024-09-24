@@ -23,26 +23,32 @@ main {
 
 main #pokedex {
     background-color: rgb(255, 68, 68);
-    width: 350px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 15px;
     border: 1px solid rgb(153, 6, 6);
     box-shadow: 6px 5px 10px 0px rgba(153, 6, 6, 0.575);
 }
 
 main #pokedex #visor {
-    background-color: hsl(0, 0%, 8%);
+    background-color: hwb(172 3% 3%);
     border: 7px solid #ccc;
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 350px;
     margin: 15px auto;
+    text-align: center;
 }
 
 main #pokedex .form-floating {
-    width: 300px;
+    width: 450px;
     margin: 15px auto 0 auto;
 }
 
 main #pokedex button {
     margin-left: 25px;
+    width: 450px;
+    border-radius: 5px;
+    height: 70 px;
+    color:red;
+    font: bold;
 }

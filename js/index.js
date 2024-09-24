@@ -47,9 +47,25 @@ document.addEventListener("DOMContentLoaded",function(){
                   data.stats.forEach(statusAtual => {
                      const divBase_stat = document.createElement("div");
                      divBase_stat.classList.add("container-base_stat");
-                     divBase_stat.innerHTML = `<h3>Peso= ${statusAtual.stat.name}:${statusAtual.stat.base_stat}</h3>`;
-                     visor.appendChild(divBase_stat);
-                  })
+                 
+                     // Criar a barra de progresso personalizada
+                     const progressContainer = document.createElement("div");
+                     progressContainer.classList.add("progress-container");
+                 
+                     const progressBar = document.createElement("div");
+                     progressBar.classList.add("progress-bar");
+                     progressBar.style.width = `${statusAtual.base_stat}%`; // Define a largura com base no valor
+                 
+                     divBase_stat.innerHTML = `<h3>${statusAtual.stat.name}: ${statusAtual.base_stat}</h3>`;
+                     progressContainer.appendChild(progressBar); // Adiciona a barra de progresso ao container
+                     divBase_stat.appendChild(progressContainer); // Adiciona o container à div
+                 
+                     const sideVisor = document.getElementById("sideVisor");
+                     sideVisor.appendChild(divBase_stat);
+                 })
+                 
+                     
+             });
 
              })
 
@@ -58,4 +74,3 @@ document.addEventListener("DOMContentLoaded",function(){
 
          })
      })
-})

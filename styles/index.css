@@ -81,3 +81,9 @@ main {
     background-color: #44ff6d; 
     transition: width 0.3s ease; /* Efeito de transição suave */
 }
+
+img {
+    width: 10vw;
+    height: 20vh;
+    object-fit: cover;
+}

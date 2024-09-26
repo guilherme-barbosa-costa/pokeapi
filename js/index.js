@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                const divAltura = document.createElement("div");
                divAltura.classList.add("container-altura");
                const alt = data.height * 10;
-               divAltura.innerHTML = `<p style="margin-bottom: 0;">${alt} CM</p>`;
+               divAltura.innerHTML = `<p>${alt} CM</p>`;
                // divAltura.style.marginTop = "5vh"
                visor.appendChild(divAltura);
 

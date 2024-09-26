@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("./../assets/poke.png");
+    font-family: "Silkscreen", system-ui;
 }
 
 header {
@@ -11,6 +12,9 @@ header {
     height: 80px;
     padding: 15px 30px;
     background-color: rgb(255, 68, 68);
+    color: white;
+    text-align: center;
+    font-size: 35px;
 }
 
 main {
@@ -58,12 +62,12 @@ main {
 }
 
 #pokedex .form-floating {
-    width: 250px;
+    width: 300px; /* campo de inserir*/
     margin: 15px auto;
 }
 
 #pokedex button {
-    width: 250px;
+    width: 300px;/* campo de pesquisar*/
     border-radius: 5px;
     height: 50px;
     color: red;
